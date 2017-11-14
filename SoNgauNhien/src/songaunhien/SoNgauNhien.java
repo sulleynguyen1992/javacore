@@ -23,7 +23,7 @@ public class SoNgauNhien {
         System.out.println("may se in ra so tu 0 toi 100. Moi ban doan");
         int soNguoiDoan;
         int soLanDoan = 0;
-        System.out.println("thim doan lan thu" + (soLanDoan + 1));
+        System.out.println("thim doan lan thu " + (soLanDoan + 1));
 
         do {
             System.out.println("Ban doan so may:...");
@@ -39,7 +39,7 @@ public class SoNgauNhien {
                 System.out.println("so ban doan sai. so may < so doan");
             }
             if (soLanDoan == 7) {
-                System.out.println("Ban da thua");
+                System.out.println("Ban da thua, so may la: " + soMay);
                 break;
             }
 
