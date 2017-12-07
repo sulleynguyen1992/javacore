@@ -5,7 +5,6 @@
  */
 package bai59renluyenhashmap;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
