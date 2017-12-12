@@ -22,6 +22,7 @@ public class Test {
     public static void menu() {
         System.out.println("1. Add Category");
         System.out.println("2. Add Product");
+        System.out.println("3. Add Product to Cat");
         System.out.println("7. Exit");
         System.out.println("Choose function you need: ");
         int choice = new Scanner(System.in).nextInt();
@@ -32,6 +33,9 @@ public class Test {
             case 2:
                 addProduct();
                 break;
+            case 3:
+                addProductToCateogry();
+                break;    
             default:
                 System.out.println("Wrong way?");
                 break;
@@ -57,7 +61,7 @@ public class Test {
     private static void addProduct() {
         System.out.println("Enter the product id: ");
         int value = new Scanner(System.in).nextInt();
-        System.out.println("Enter the category name: ");
+        System.out.println("Enter the Product name: ");
         String name = new Scanner(System.in).nextLine();
         System.out.println("Enter the category Price: ");
         double price = new Scanner(System.in).nextDouble();
@@ -66,5 +70,13 @@ public class Test {
         productItem = new Product(value, name, price, madeIn);
         categoryItem.addProduct(productItem);
 
+    }
+
+    private static void addProductToCateogry() {
+        System.out.println("Enter the category id: ");
+        int catId = new Scanner(System.in).nextInt();
+        System.out.println("Enter the product id: ");
+        int productId = new Scanner(System.in).nextInt();
+        listCategory.addProductToCategory(catId, productId);
     }
 }

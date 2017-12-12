@@ -15,7 +15,7 @@ public class Category {
     private int codeCat;
     private String categoryName;
     private ArrayList<Product> listProduct = new ArrayList<>();
-    
+    private ArrayList<Product> listProductOfCategory = new ArrayList<>();
     public Category(){
         super();
     }
@@ -24,6 +24,14 @@ public class Category {
         this.categoryName = categoryName;
     }
 
+    public void setListProductOfCategory(ArrayList<Product> listProductOfCategory) {
+        this.listProductOfCategory = listProductOfCategory;
+    }
+
+    public ArrayList<Product> getListProductOfCategory() {
+        return listProductOfCategory;
+    }
+    
     public void setCodeCat(int codeCat){
         this.codeCat = codeCat;
     }
